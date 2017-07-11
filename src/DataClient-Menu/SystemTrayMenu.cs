@@ -41,7 +41,7 @@ namespace TrakHound.DataClient.Menu
 
             // Set NotifyIcon Properties
             NotifyIcon.Text = "TrakHound DataClient";
-            NotifyIcon.Icon = Properties.Resources.dataclient;
+            NotifyIcon.Icon = Properties.Resources.dataclient_status_stopped;
             NotifyIcon.ContextMenuStrip = menu;
             NotifyIcon.Visible = true;
         }

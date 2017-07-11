@@ -130,4 +130,10 @@
   <data name="dataclient_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dataclient-menu.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dataclient_status_running" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dataclient-status-running.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dataclient_status_stopped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dataclient-status-stopped.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

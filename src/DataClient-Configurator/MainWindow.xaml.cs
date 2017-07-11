@@ -9,7 +9,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using System.Threading;
 using System.Windows;
 using TrakHound.Api.v2.Authentication;
 using TrakHound.MTConnectSniffer;
@@ -430,6 +429,7 @@ namespace TrakHound.DataClient.Configurator
                 // Device Finder
                 FindDevicesAutomatically = config.DeviceFinder != null;
             }
+            else config = new Configuration();
 
             StartConfigurationFileWatcher();
         }

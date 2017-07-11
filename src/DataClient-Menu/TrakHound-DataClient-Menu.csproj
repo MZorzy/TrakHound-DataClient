@@ -42,7 +42,7 @@
   <PropertyGroup />
   <ItemGroup>
     <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.4.4\lib\net40\NLog.dll</HintPath>
+      <HintPath>..\..\..\TrakHound-Community\src\packages\NLog.4.4.11\lib\net40\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -100,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\dataclient-menu.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dataclient-status-running.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\dataclient-status-stopped.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
