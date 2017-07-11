@@ -34,6 +34,7 @@ namespace TrakHound.DataClient
         private string availabilityId;
         private bool prev_available;
         private bool prev_connected;
+        private bool first = true;
 
 
         [XmlIgnore]
@@ -563,7 +564,9 @@ namespace TrakHound.DataClient
                 prev_available = available;
             }
 
-            if (changed) UpdateStatus(connected, available);
+            if (changed || first) UpdateStatus(connected, available);
+
+            first = false;
         }
 
         private void UpdateConnectedStatus(bool connected)
@@ -578,7 +581,9 @@ namespace TrakHound.DataClient
                 prev_connected = connected;
             }
 
-            if (changed) UpdateStatus(connected, available);
+            if (changed || first) UpdateStatus(connected, available);
+
+            first = false;
         }
 
         private void UpdateStatus(bool connected, bool available)
