@@ -39,7 +39,8 @@ namespace TrakHound.DataClient
 
         public DeviceStartQueue()
         {
-            Delay = 2000;
+            //Delay = 2000;
+            Delay = 500;
         }
 
         public void Start()
