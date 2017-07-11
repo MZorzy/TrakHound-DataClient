@@ -28,6 +28,9 @@ namespace TrakHound.DataClient
 
         private static void Init(string[] args)
         {
+            System.Net.ServicePointManager.DefaultConnectionLimit = 1000;
+            System.Threading.ThreadPool.SetMinThreads(100, 4);
+
             if (args.Length > 0)
             {
                 string mode = args[0];

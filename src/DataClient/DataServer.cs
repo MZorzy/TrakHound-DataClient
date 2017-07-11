@@ -254,7 +254,8 @@ namespace TrakHound.DataClient
                     var deviceIds = statusData.Select(o => o.DeviceId).Distinct();
                     foreach (var deviceId in deviceIds)
                     {
-                        statuses.Add(statusData.FindAll(o => o.DeviceId == deviceId).OrderByDescending(o => o.Timestamp).First());
+                        var latestStatus = statusData.FindAll(o => o.DeviceId == deviceId).OrderByDescending(o => o.Timestamp).First();
+                        statuses.Add(latestStatus);
                     }
 
                     filtered.AddRange(statuses);
